@@ -225,18 +225,27 @@ end
 def player_with_longest_name
   game = game_hash
   longest_name = 0
+<<<<<<< HEAD
   long_name_hash = 'yeet'
   game.each{|key, value|
     value[:players].length.times{|i|
       if value[:players][i][:player_name].length > longest_name
         longest_name = value[:players][i][:player_name].length
         long_name_hash = value[:players][i][:player_name]
+=======
+  long_name_hash = ''
+  game.each{|key, value|
+    value[:players].each{|i|
+      if value[:players][i][:player_name].length > longest_name
+        puts 'stuff'
+>>>>>>> 2d36ba5350707dc23fbe8ce530c31f7f2f0c3790
       end
     }
   }
   long_name_hash
 end
 
+<<<<<<< HEAD
 def long_name_steals_a_ton?
   game = game_hash
   longest_name_player = player_with_longest_name
@@ -260,6 +269,8 @@ def long_name_steals_a_ton?
 end
 
 
+=======
+>>>>>>> 2d36ba5350707dc23fbe8ce530c31f7f2f0c3790
 
 
 
